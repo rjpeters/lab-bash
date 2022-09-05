@@ -1,0 +1,53 @@
+(base) [work@192:~/Ironhack/Labs/lab-bash]% echo "Hello, World!"
+dquote> "
+Hello, World
+
+(base) [work@192:~/Ironhack/Labs/lab-bash]% echo 'Hello, World!'
+Hello, World!
+(base) [work@192:~/Ironhack/Labs/lab-bash]% mkdir new_dir
+(base) [work@192:~/Ironhack/Labs/lab-bash]% rmdir new_dir 
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cp lorem/sed.txt lorem-copy/sed.txt
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls lorem-copy 
+dummy_file.txt*	sed.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cat lorem/sed.txt 
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls lorem
+at.txt*		at.txte*	lorem.txt*	sed.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash]% file at.txt
+at.txt: cannot open `at.txt' (No such file or directory)
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cp lorem/at.txt lorem-copy/
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls lorem-copy 
+at.txt*		dummy_file.txt*	sed.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash]% rm lorem-copy/at.txt 
+(base) [work@192:~/Ironhack/Labs/lab-bash]% git add .
+(base) [work@192:~/Ironhack/Labs/lab-bash]% git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   lorem-copy/sed.txt
+
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls lorem/at.txt
+lorem/at.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls lorem
+at.txt*		at.txte*	lorem.txt*	sed.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cp lorem/at.txt lorem-copy/; cp lorem/lorem.txt lorem-copy/
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cp at.txte lorem-copy
+cp: at.txte: No such file or directory
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cp lorem/at.txte lorem-copy
+(base) [work@192:~/Ironhack/Labs/lab-bash]% ls
+exercices/	lorem/		outputs/
+inputs/		lorem-copy/	readme.md
+(base) [work@192:~/Ironhack/Labs/lab-bash]% cd lorem-copy 
+(base) [work@192:~/Ironhack/Labs/lab-bash/lorem-copy]% ls
+at.txt*		at.txte*	dummy_file.txt*	lorem.txt*	sed.txt*
+(base) [work@192:~/Ironhack/Labs/lab-bash/lorem-copy]% rm at.txte
